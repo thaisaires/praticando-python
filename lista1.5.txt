@@ -1,0 +1,7 @@
+#5 Realiza a leitura de 1 float referente ao valor de um produto e imprime o valor com descontos de 10%, 20% e 50%.
+
+valorProduto = float(input('Digite o valor do produto: '))
+desconto10 = valorProduto * 0.9
+desconto20 = valorProduto * 0.8
+desconto50 = valorProduto * 0.5
+print('O produto custa R${} sem desconto, R${:.2f} com desconto de 10%, R${:.2f} com desconto de 20% e R${:.2f} com desconto de 50%'.format(valorProduto, desconto10, desconto20, desconto50))

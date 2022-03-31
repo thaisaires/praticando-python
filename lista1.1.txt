@@ -1,0 +1,9 @@
+#1 Realiza a leitura de 2 floats e imprime as seguintes operações: soma, subtração, multiplicação, divisão e resto da divisão.
+
+numero1 = float(input('Informe o primero número real: '))
+numero2 = float(input('Informe o segundo número real: '))
+soma = numero1 + numero2
+sub = numero1 - numero2
+mult = numero1 * numero2
+div = numero1 / numero2
+print('Soma = {} \nSubtração = {}\nMultiplicação = {:.2f}\nDivisão = {:.2f}'.format(soma, sub, mult, div))

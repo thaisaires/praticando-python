@@ -1,0 +1,7 @@
+#4 Realiza a leitura de 3 floats e imprime a média aritmética.
+
+numero1 = float(input('Digite o primeiro número real: '))
+numero2 = float(input('Digite o segundo número real: '))
+numero3 = float(input('Digite o terceiro número real: '))
+media = (numero1 + numero2 + numero3) / 3
+print('A média dos números {}, {} e {} é igual a {:.2f}'.format(numero1, numero2, numero3, media))
