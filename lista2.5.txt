@@ -1,0 +1,5 @@
+#5 Faça um Programa que converta metros para centímetros
+
+metros = float(input('Informe o comprimento em metros: '))
+cm = metros*100
+print('{:.1f} metros em centímetros é igual a {:.1f}'.format(metros, cm))

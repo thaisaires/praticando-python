@@ -1,0 +1,12 @@
+'''Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+• o produto do dobro do primeiro com metade do segundo .
+• a soma do triplo do primeiro com o terceiro.
+• o terceiro elevado ao cubo'''
+
+numero1 = int(input('Digite um número inteiro '))
+numero2 = int(input('Digite um número inteiro '))
+numero3 = float(input('Digite um número real '))
+produto = (numero1*2) * (numero2/2)
+soma = (numero1*3) + numero3
+cubo = numero3**3
+print('Produto do dobro do primeiro com metade do segundo: {}\nSoma do triplo do primeiro com o terceiro: {}\nterceiro elevado ao cubo: {}'.format(produto, soma, cubo))

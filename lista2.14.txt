@@ -1,0 +1,14 @@
+'''Toda vez que o pescador traz um peso de peixes maior que 50 quilos deve pagar uma multa de R$ 4,00 por quilo excedente.
+Faça um programa que leia a variável peso e calcule o excesso. Grave na variável excesso a quantidade de quilos além do limite
+e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.'''
+
+peso = float(input('Informe quantos quilos de peixe foram pescados: '))
+excesso = 0
+multa = 0
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+else:
+    excesso = 0
+    multa = 0
+print('Você pescou {}kgs de peixe, portando o excesso foi de {}kgs e a multa será de R${:.2f}'.format(peso, excesso, multa))

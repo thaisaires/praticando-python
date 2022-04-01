@@ -1,0 +1,16 @@
+'''15 Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu
+salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um
+programa que nos dê:
+• salário bruto.
+• quanto pagou ao INSS.
+• quanto pagou ao sindicato.
+• o salário líquido.'''
+
+valorHora = float(input('Informe quanto você ganha por hora trabalhada: R$'))
+numeroDeHoras = float(input('Informe quantas horas você trabalhou nesse mês: '))
+salarioBruto = valorHora * numeroDeHoras
+impostoDeRenda = salarioBruto * 0.11 #calculando o desconto de 11% para o imposto de renda
+inss = salarioBruto * 0.08 #calculando o desconto de 8% para o INSS
+sindicato = salarioBruto * 0.05 #calculando o desconto de 5% para o sindicato
+salarioLiquido = salarioBruto - impostoDeRenda - inss - sindicato
+print('Salário bruto: R${:.2f}\nImposto de renda (11%): R${:.2f}\nINSS (8%): R${:.2f}\nSindicato (5%): R${:.2f}\nSalário líquido: R${:.2f}\n'.format(salarioBruto, impostoDeRenda, inss, sindicato, salarioLiquido))
