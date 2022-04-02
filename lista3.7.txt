@@ -1,0 +1,30 @@
+#Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar,
+# sabendo que a decisão é sempre pelo mais barato.
+
+preco1 = float(input('Informe o preço do primeiro produto: R$ '))
+preco2 = float(input('Informe o preço do segundo produto: R$ '))
+preco3 = float(input('Informe o preço do terceiro produto: R$ '))
+
+#se todos os preços forem iguais
+if preco1 == preco2 == preco3:
+    print('Compre qualquer um dos produtos')
+#se dois preços forem iguais
+elif preco1 == preco2:
+    print('Compre o primeiro ou segundo produto')
+elif preco1 == preco3:
+    print('Compre o primeiro ou terceiro produto')
+elif preco2 == preco3:
+    print('Compre o segundo ou terceiro produto')
+#comparando preço1 com preço2 e preço3
+elif preco1 < preco2:
+    if preco1 < preco3:
+        print('Compre o primeiro produto')
+    else:
+        print('Compre o terceiro produto')
+#comparando preço2 com preço1 e preço3
+elif preco2 < preco1:
+    if preco2 < preco3:
+        print('Compre o segundo produto')
+    else:
+        print('Compre o terceiro produto')
+

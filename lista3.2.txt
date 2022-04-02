@@ -1,0 +1,9 @@
+#2 Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo
+
+numero = float(input('Informe um número para saber se é positivo ou negativo: '))
+if numero > 0:
+    print('O  número {} é positivo'.format(numero))
+elif numero < 0:
+    print('O  número {} é negativo'.format(numero))
+else:
+    print('O número 0 é neutro')
