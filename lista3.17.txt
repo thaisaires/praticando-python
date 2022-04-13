@@ -1,0 +1,41 @@
+#17 Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
+# O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+#   • par ou ímpar;
+#   • positivo ou negativo;
+#   • inteiro ou decimal.
+
+
+numero1 = float(input('Digite o primeiro número inteiro: '))
+numero2 = float(input('Digite o segundo número inteiro: '))
+op = input('Qual operação você deseja realizar? [+, -, *, /]')
+resultado = 0
+if op == '+':
+    resultado = numero1 + numero2
+if op == '-':
+    resultado = numero1 - numero2
+if op == '*':
+    resultado = numero1 * numero2
+if op == '/':
+    resultado = numero1 / numero2
+else:
+    print('Digite uma das opções [+, -, *, /]')
+
+print('{} {} {} é igual a {:.2f}'.format(numero1, op, numero2, resultado))
+if resultado == 0:
+    print('0 é um número neutro')
+elif resultado % 2 == 0:
+    print('par')
+else:
+    print('ímpar')
+if resultado == 0:
+    print()
+elif resultado > 0:
+    print('positivo')
+else:
+    print('negativo')
+if resultado == 0:
+    print()
+elif resultado == round(resultado):
+    print('inteiro')
+else:
+    print('decimal')

@@ -1,0 +1,10 @@
+#15 Faça um Programa que peça um número inteiro e determine se ele é par ou impar.
+
+numero = int(input('Digite um número inteito para saber se ele é par ou ímpar: '))
+
+if numero == 0:
+    print('O número 0 é neutro!')
+elif numero % 2 == 0:
+    print('Número par!')
+else:
+    print('Número ímpar!')

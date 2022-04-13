@@ -1,0 +1,39 @@
+# 12 Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
+
+data = input('Informe a data no formato dd/mm/aaaa: ')
+dia = int(data[:2])
+mes = int(data[3:5])
+ano = int(data[6:10])
+validaDia = False
+validaAno = False
+validaMes = False
+mes30 = [4, 6, 9, 11]
+mes31 = [1, 3, 5, 7, 8, 10, 12]
+# validando o ano
+if ano > 0 and ano <= 9999:
+    validaAno = True
+# validando o mês
+if mes > 0 and mes <= 12:
+    validaMes = True
+# exceção do mês de fevereiro
+if mes == 2:
+    # verificando os dias de fevereiro em anos bissextos
+    if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+        if dia > 0 and dia <= 29:
+            validaDia = True
+    # verificando os dias de fevereiro em anos não bissextos
+    else:
+        if dia > 0 and dia <= 28:
+            validaDia = True
+# validando dia em meses com 30 dias
+elif mes in mes30:
+    if dia > 0 and dia <= 30:
+        validaDia = True
+# validando dia em meses com 31 dias
+elif mes in mes31:
+    if dia > 0 and dia <= 31:
+        validaDia = True
+if (validaDia == True) and (validaMes == True) and (validaAno == True):
+    print('Data válida')
+else:
+    print('Data inválida')
