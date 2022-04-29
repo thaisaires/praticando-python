@@ -1,0 +1,9 @@
+#informa o seno, cosseno e tangente de um ângulo lido
+from math import radians, sin, cos, tan
+ang = int(input('Informe o ângulo: '))
+seno = sin(radians(ang))
+cos = cos(radians(ang))
+tg = tan(radians(ang))
+print('O ângulo de {}º tem o seno {:.2f}'.format(ang, seno))
+print('O ângulo de {}º tem o cosseno {:.2f}'.format(ang, cos))
+print('O ângulo de {}º tem a tangente {:.2f}'.format(ang, tg))

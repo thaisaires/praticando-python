@@ -1,0 +1,5 @@
+# split separa a frase onde tem espaço e cada palavra corresponderá a um índice do array dividido
+# print exibe o conteúdo de dividido na posição: [2]('Python')[3]('h')
+frase = 'Teste De Python'
+dividido = frase.split()
+print(dividido[2][3])

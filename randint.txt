@@ -1,0 +1,14 @@
+#gera um número aleátorio de 0 a 5 e lê outro número do usuário, depois compara se os dois são iguais
+from random import randint
+from time import sleep
+num = randint(0,5)
+print('-=-' * 20)
+print('Vou pensar em um número entre 0 e 5. Tente advinhar...')
+print('-=-' * 20)
+n = int(input('Em que número pensei? '))
+print('PROCESSANDO...')
+sleep(3)
+if num == n :
+    print('Você venceu!')
+else:
+    print('Você perdeu! O número correto é: {}'.format(num))

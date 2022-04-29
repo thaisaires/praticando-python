@@ -1,0 +1,7 @@
+#lê cateto oposto e adjacente e informa a hipotenusa
+
+from math import hypot
+co = float(input('Informe o comprimento do cateto oposto: '))
+ca = float(input('Informe o comprimento do cateto adjacente: '))
+h = hypot(co, ca)
+print('Hipotenusa = {:.2f}.'.format(h))
